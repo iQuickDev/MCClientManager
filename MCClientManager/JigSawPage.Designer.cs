@@ -31,7 +31,7 @@ namespace MCClientManager
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(JigSawPage));
             this.description = new System.Windows.Forms.RichTextBox();
-            this.downloadgamesense = new Guna.UI2.WinForms.Guna2Button();
+            this.downloadjigsaw18 = new Guna.UI2.WinForms.Guna2Button();
             this.jigsawdownloader = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -46,25 +46,25 @@ namespace MCClientManager
             this.description.TabIndex = 1;
             this.description.Text = "";
             // 
-            // downloadgamesense
+            // downloadjigsaw18
             // 
-            this.downloadgamesense.Animated = true;
-            this.downloadgamesense.AnimatedGIF = true;
-            this.downloadgamesense.AutoRoundedCorners = true;
-            this.downloadgamesense.BorderRadius = 24;
-            this.downloadgamesense.CheckedState.Parent = this.downloadgamesense;
-            this.downloadgamesense.CustomImages.Parent = this.downloadgamesense;
-            this.downloadgamesense.FillColor = System.Drawing.Color.White;
-            this.downloadgamesense.Font = new System.Drawing.Font("Segoe UI", 15F);
-            this.downloadgamesense.ForeColor = System.Drawing.Color.Black;
-            this.downloadgamesense.HoverState.Parent = this.downloadgamesense;
-            this.downloadgamesense.Location = new System.Drawing.Point(50, 355);
-            this.downloadgamesense.Name = "downloadgamesense";
-            this.downloadgamesense.PressedColor = System.Drawing.Color.White;
-            this.downloadgamesense.ShadowDecoration.Parent = this.downloadgamesense;
-            this.downloadgamesense.Size = new System.Drawing.Size(200, 50);
-            this.downloadgamesense.TabIndex = 3;
-            this.downloadgamesense.Text = "JigSaw 1.8x";
+            this.downloadjigsaw18.Animated = true;
+            this.downloadjigsaw18.AnimatedGIF = true;
+            this.downloadjigsaw18.AutoRoundedCorners = true;
+            this.downloadjigsaw18.BorderRadius = 24;
+            this.downloadjigsaw18.CheckedState.Parent = this.downloadjigsaw18;
+            this.downloadjigsaw18.CustomImages.Parent = this.downloadjigsaw18;
+            this.downloadjigsaw18.FillColor = System.Drawing.Color.White;
+            this.downloadjigsaw18.Font = new System.Drawing.Font("Segoe UI", 15F);
+            this.downloadjigsaw18.ForeColor = System.Drawing.Color.Black;
+            this.downloadjigsaw18.HoverState.Parent = this.downloadjigsaw18;
+            this.downloadjigsaw18.Location = new System.Drawing.Point(50, 355);
+            this.downloadjigsaw18.Name = "downloadjigsaw18";
+            this.downloadjigsaw18.PressedColor = System.Drawing.Color.White;
+            this.downloadjigsaw18.ShadowDecoration.Parent = this.downloadjigsaw18;
+            this.downloadjigsaw18.Size = new System.Drawing.Size(200, 50);
+            this.downloadjigsaw18.TabIndex = 3;
+            this.downloadjigsaw18.Text = "JigSaw 1.8x";
             // 
             // jigsawdownloader
             // 
@@ -87,7 +87,7 @@ namespace MCClientManager
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.Controls.Add(this.jigsawdownloader);
-            this.Controls.Add(this.downloadgamesense);
+            this.Controls.Add(this.downloadjigsaw18);
             this.Controls.Add(this.description);
             this.Name = "JigSawPage";
             this.Size = new System.Drawing.Size(300, 480);
@@ -97,7 +97,7 @@ namespace MCClientManager
 
         #endregion
         private System.Windows.Forms.RichTextBox description;
-        private Guna.UI2.WinForms.Guna2Button downloadgamesense;
+        private Guna.UI2.WinForms.Guna2Button downloadjigsaw18;
         private System.Windows.Forms.Button jigsawdownloader;
     }
 }

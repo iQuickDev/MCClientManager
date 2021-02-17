@@ -51,17 +51,38 @@ namespace MCClientManager
              gamesensepageselector.Parent = skillclientpageselector.Parent = skidpageselector.Parent = wolframpageselector.Parent = wurstpageselector.Parent = sigmapageselector.Parent = aristoispageselector.Parent = jigsawpageselector.Parent =  fluxpageselector.Parent = credits.Parent = this;
              skillclientpageselector.Location = wolframpageselector.Location = wurstpageselector.Location = skidpageselector.Location = gamesensepageselector.Location = fluxpageselector.Location = aristoispageselector.Location = sigmapageselector.Location = jigsawpageselector.Location = credits.Location = new Point(350, 30);
             versionsfolder.Text = versionspath;
+            aristoispage.MouseEnter += aristoispage_MouseEnter;
+            aristoispage.MouseLeave += aristoispage_MouseLeave;
+            fluxpage.MouseEnter += fluxpage_MouseEnter;
+            fluxpage.MouseLeave += fluxpage_MouseLeave;
+            gamesensepage.MouseEnter += gamesensepage_MouseEnter;
+            gamesensepage.MouseLeave += gamesensepage_MouseLeave;
+            jigsawpage.MouseEnter += jigsawpage_MouseEnter;
+            jigsawpage.MouseLeave += jigsawpage_MouseLeave;
+            sigmapage.MouseEnter += sigmapage_MouseEnter;
+            sigmapage.MouseLeave += sigmapage_MouseLeave;
+            skidpage.MouseEnter += skidpage_MouseEnter;
+            skidpage.MouseLeave += skidpage_MouseLeave;
+            skillclientpage.MouseEnter += skillclient_MouseEnter;
+            skillclientpage.MouseLeave += skillclient_MouseLeave;
+            wolframpage.MouseEnter += wolframpage_MouseEnter;
+            wolframpage.MouseLeave += wolframpage_MouseLeave;
+            wurstpage.MouseEnter += wurstpage_MouseEnter;
+            wurstpage.MouseLeave += wurstpage_MouseLeave;
+
             titlebar.MouseDown += titlebar_MouseDown;
             titlebar.MouseUp += titlebar_MouseUp;
             titlebar.MouseMove += titlebar_MouseMove;
-            jigsawdownloader.Click += jigsawdownloader_Click;
-            gamesensedownloader.Click += gamesensedownloader_Click;
+            jigsawpage.Click += jigsawdownloader_Click;
+            gamesensepage.Click += gamesensedownloader_Click;
             close.Click += close_Click;
             minimize.Click += minimize_Click;
             pin.Click += pin_Click;
             unpin.Click += unpin_Click;
             foldericon.Click += foldericon_Click;
             Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 20, 20));
+
+
             downloader.DownloadProgressChanged += (_, e) =>
             {
                 downloadbar.Value = e.ProgressPercentage;
@@ -243,6 +264,121 @@ namespace MCClientManager
         private void aristoispage_Click(object sender, EventArgs e)
         {
             aristoispageselector.BringToFront();
+        }
+
+        // Animation
+        Point oldpos = new Point(0, 0);
+        Size oldsize = new Size(0, 0);
+        Point posdecrement = new Point(-2, -2);
+        Size sizeincrement = new Size(5, 5);
+
+        private void aristoispage_MouseEnter(object sender, EventArgs e)
+        {
+            oldpos = aristoispage.Location;
+            oldsize = aristoispage.Size;
+            aristoispage.Location = Point.Add(aristoispage.Location, (Size)posdecrement);
+            aristoispage.Size = Size.Add(aristoispage.Size, sizeincrement);
+        }
+        private void aristoispage_MouseLeave(object sender, EventArgs e)
+        {
+            aristoispage.Location = oldpos;
+            aristoispage.Size = oldsize;
+        }
+        private void fluxpage_MouseEnter(object sender, EventArgs e)
+        {
+            oldpos = fluxpage.Location;
+            oldsize = fluxpage.Size;
+            fluxpage.Location = Point.Add(fluxpage.Location, (Size)posdecrement);
+            fluxpage.Size = Size.Add(fluxpage.Size, sizeincrement);
+        }
+        private void fluxpage_MouseLeave(object sender, EventArgs e)
+        {
+            fluxpage.Location = oldpos;
+            fluxpage.Size = oldsize;
+        }
+        private void gamesensepage_MouseEnter(object sender, EventArgs e)
+        {
+            oldpos = gamesensepage.Location;
+            oldsize = gamesensepage.Size;
+            gamesensepage.Location = Point.Add(gamesensepage.Location, (Size)posdecrement);
+            gamesensepage.Size = Size.Add(gamesensepage.Size, sizeincrement);
+        }
+        private void gamesensepage_MouseLeave(object sender, EventArgs e)
+        {
+            gamesensepage.Location = oldpos;
+            gamesensepage.Size = oldsize;
+        }
+        private void jigsawpage_MouseEnter(object sender, EventArgs e)
+        {
+            oldpos = jigsawpage.Location;
+            oldsize = jigsawpage.Size;
+            jigsawpage.Location = Point.Add(jigsawpage.Location, (Size)posdecrement);
+            jigsawpage.Size = Size.Add(jigsawpage.Size, sizeincrement);
+        }
+        private void jigsawpage_MouseLeave(object sender, EventArgs e)
+        {
+            jigsawpage.Location = oldpos;
+            jigsawpage.Size = oldsize;
+        }
+        private void sigmapage_MouseEnter(object sender, EventArgs e)
+        {
+            oldpos = sigmapage.Location;
+            oldsize = sigmapage.Size;
+            sigmapage.Location = Point.Add(sigmapage.Location, (Size)posdecrement);
+            sigmapage.Size = Size.Add(sigmapage.Size, sizeincrement);
+        }
+        private void sigmapage_MouseLeave(object sender, EventArgs e)
+        {
+            sigmapage.Location = oldpos;
+            sigmapage.Size = oldsize;
+        }
+        private void skidpage_MouseEnter(object sender, EventArgs e)
+        {
+            oldpos = skidpage.Location;
+            oldsize = skidpage.Size;
+            skidpage.Location = Point.Add(skidpage.Location, (Size)posdecrement);
+            skidpage.Size = Size.Add(skidpage.Size, sizeincrement);
+        }
+        private void skidpage_MouseLeave(object sender, EventArgs e)
+        {
+            skidpage.Location = oldpos;
+            skidpage.Size = oldsize;
+        }
+        private void skillclient_MouseEnter(object sender, EventArgs e)
+        {
+            oldpos = skillclientpage.Location;
+            oldsize = skillclientpage.Size;
+            skillclientpage.Location = Point.Add(skillclientpage.Location, (Size)posdecrement);
+            skillclientpage.Size = Size.Add(skillclientpage.Size, sizeincrement);
+        }
+        private void skillclient_MouseLeave(object sender, EventArgs e)
+        {
+            skillclientpage.Location = oldpos;
+            skillclientpage.Size = oldsize;
+        }
+        private void wolframpage_MouseEnter(object sender, EventArgs e)
+        {
+            oldpos = wolframpage.Location;
+            oldsize = wolframpage.Size;
+            wolframpage.Location = Point.Add(wolframpage.Location, (Size)posdecrement);
+            wolframpage.Size = Size.Add(wolframpage.Size, sizeincrement);
+        }
+        private void wolframpage_MouseLeave(object sender, EventArgs e)
+        {
+            wolframpage.Location = oldpos;
+            wolframpage.Size = oldsize;
+        }
+        private void wurstpage_MouseEnter(object sender, EventArgs e)
+        {
+            oldpos = wurstpage.Location;
+            oldsize = wurstpage.Size;
+            wurstpage.Location = Point.Add(wurstpage.Location, (Size)posdecrement);
+            wurstpage.Size = Size.Add(wurstpage.Size, sizeincrement);
+        }
+        private void wurstpage_MouseLeave(object sender, EventArgs e)
+        {
+            wurstpage.Location = oldpos;
+            wurstpage.Size = oldsize;
         }
     }
 }

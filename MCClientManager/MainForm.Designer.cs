@@ -30,8 +30,8 @@ namespace MCClientManager
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
-            this.jigsawdownloader = new System.Windows.Forms.Button();
-            this.gamesensedownloader = new System.Windows.Forms.Button();
+            this.jigsawpage = new System.Windows.Forms.Button();
+            this.gamesensepage = new System.Windows.Forms.Button();
             this.versionsfolder = new System.Windows.Forms.TextBox();
             this.titlebar = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -54,7 +54,7 @@ namespace MCClientManager
             this.wolframpage = new System.Windows.Forms.Button();
             this.wurstpage = new System.Windows.Forms.Button();
             this.fluxpage = new System.Windows.Forms.Button();
-            this.skidclientpage = new System.Windows.Forms.Button();
+            this.skidpage = new System.Windows.Forms.Button();
             this.downloadbar = new Guna.UI2.WinForms.Guna2ProgressBar();
             this.infocontainer = new Guna.UI2.WinForms.Guna2GroupBox();
             this.titlebar.SuspendLayout();
@@ -68,36 +68,36 @@ namespace MCClientManager
             this.infocontainer.SuspendLayout();
             this.SuspendLayout();
             // 
-            // jigsawdownloader
+            // jigsawpage
             // 
-            this.jigsawdownloader.BackColor = System.Drawing.Color.Transparent;
-            this.jigsawdownloader.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("jigsawdownloader.BackgroundImage")));
-            this.jigsawdownloader.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.jigsawdownloader.FlatAppearance.BorderSize = 0;
-            this.jigsawdownloader.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.jigsawdownloader.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.jigsawdownloader.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.jigsawdownloader.Location = new System.Drawing.Point(20, 49);
-            this.jigsawdownloader.Name = "jigsawdownloader";
-            this.jigsawdownloader.Size = new System.Drawing.Size(100, 25);
-            this.jigsawdownloader.TabIndex = 0;
-            this.jigsawdownloader.UseVisualStyleBackColor = false;
-            this.jigsawdownloader.Click += new System.EventHandler(this.jigsawdownloader_Click_1);
+            this.jigsawpage.BackColor = System.Drawing.Color.Transparent;
+            this.jigsawpage.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("jigsawpage.BackgroundImage")));
+            this.jigsawpage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.jigsawpage.FlatAppearance.BorderSize = 0;
+            this.jigsawpage.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.jigsawpage.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.jigsawpage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.jigsawpage.Location = new System.Drawing.Point(20, 49);
+            this.jigsawpage.Name = "jigsawpage";
+            this.jigsawpage.Size = new System.Drawing.Size(100, 25);
+            this.jigsawpage.TabIndex = 0;
+            this.jigsawpage.UseVisualStyleBackColor = false;
+            this.jigsawpage.Click += new System.EventHandler(this.jigsawdownloader_Click_1);
             // 
-            // gamesensedownloader
+            // gamesensepage
             // 
-            this.gamesensedownloader.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("gamesensedownloader.BackgroundImage")));
-            this.gamesensedownloader.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.gamesensedownloader.FlatAppearance.BorderSize = 0;
-            this.gamesensedownloader.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.gamesensedownloader.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.gamesensedownloader.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.gamesensedownloader.Location = new System.Drawing.Point(20, 96);
-            this.gamesensedownloader.Name = "gamesensedownloader";
-            this.gamesensedownloader.Size = new System.Drawing.Size(100, 25);
-            this.gamesensedownloader.TabIndex = 1;
-            this.gamesensedownloader.UseVisualStyleBackColor = true;
-            this.gamesensedownloader.Click += new System.EventHandler(this.gamesensedownloader_Click_1);
+            this.gamesensepage.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("gamesensepage.BackgroundImage")));
+            this.gamesensepage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.gamesensepage.FlatAppearance.BorderSize = 0;
+            this.gamesensepage.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.gamesensepage.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.gamesensepage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.gamesensepage.Location = new System.Drawing.Point(20, 96);
+            this.gamesensepage.Name = "gamesensepage";
+            this.gamesensepage.Size = new System.Drawing.Size(100, 25);
+            this.gamesensepage.TabIndex = 1;
+            this.gamesensepage.UseVisualStyleBackColor = true;
+            this.gamesensepage.Click += new System.EventHandler(this.gamesensedownloader_Click_1);
             // 
             // versionsfolder
             // 
@@ -210,7 +210,7 @@ namespace MCClientManager
             // 
             this.label1.AutoSize = true;
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(55, 40);
+            this.label1.Location = new System.Drawing.Point(55, 36);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(59, 15);
             this.label1.TabIndex = 6;
@@ -220,7 +220,7 @@ namespace MCClientManager
             // 
             this.label2.AutoSize = true;
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(55, 53);
+            this.label2.Location = new System.Drawing.Point(55, 49);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(21, 15);
             this.label2.TabIndex = 7;
@@ -229,7 +229,7 @@ namespace MCClientManager
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(4, 71);
+            this.label5.Location = new System.Drawing.Point(4, 67);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(55, 15);
             this.label5.TabIndex = 10;
@@ -238,7 +238,7 @@ namespace MCClientManager
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(3, 40);
+            this.label4.Location = new System.Drawing.Point(3, 36);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(42, 15);
             this.label4.TabIndex = 9;
@@ -247,7 +247,7 @@ namespace MCClientManager
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(3, 53);
+            this.label3.Location = new System.Drawing.Point(3, 49);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(36, 15);
             this.label3.TabIndex = 8;
@@ -353,20 +353,20 @@ namespace MCClientManager
             this.fluxpage.UseVisualStyleBackColor = true;
             this.fluxpage.Click += new System.EventHandler(this.fluxpage_Click);
             // 
-            // skidclientpage
+            // skidpage
             // 
-            this.skidclientpage.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("skidclientpage.BackgroundImage")));
-            this.skidclientpage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.skidclientpage.FlatAppearance.BorderSize = 0;
-            this.skidclientpage.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.skidclientpage.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.skidclientpage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.skidclientpage.Location = new System.Drawing.Point(166, 96);
-            this.skidclientpage.Name = "skidclientpage";
-            this.skidclientpage.Size = new System.Drawing.Size(100, 25);
-            this.skidclientpage.TabIndex = 46;
-            this.skidclientpage.UseVisualStyleBackColor = true;
-            this.skidclientpage.Click += new System.EventHandler(this.skidclientpage_Click);
+            this.skidpage.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("skidpage.BackgroundImage")));
+            this.skidpage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.skidpage.FlatAppearance.BorderSize = 0;
+            this.skidpage.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.skidpage.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.skidpage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.skidpage.Location = new System.Drawing.Point(166, 96);
+            this.skidpage.Name = "skidpage";
+            this.skidpage.Size = new System.Drawing.Size(100, 25);
+            this.skidpage.TabIndex = 46;
+            this.skidpage.UseVisualStyleBackColor = true;
+            this.skidpage.Click += new System.EventHandler(this.skidclientpage_Click);
             // 
             // downloadbar
             // 
@@ -374,7 +374,7 @@ namespace MCClientManager
             this.downloadbar.BorderRadius = 5;
             this.downloadbar.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.downloadbar.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Horizontal;
-            this.downloadbar.Location = new System.Drawing.Point(5, 88);
+            this.downloadbar.Location = new System.Drawing.Point(6, 84);
             this.downloadbar.Name = "downloadbar";
             this.downloadbar.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(255)))));
             this.downloadbar.ProgressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(0)))), ((int)(((byte)(255)))));
@@ -398,7 +398,7 @@ namespace MCClientManager
             this.infocontainer.FillColor = System.Drawing.Color.Transparent;
             this.infocontainer.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.infocontainer.ForeColor = System.Drawing.Color.White;
-            this.infocontainer.Location = new System.Drawing.Point(20, 317);
+            this.infocontainer.Location = new System.Drawing.Point(65, 328);
             this.infocontainer.Name = "infocontainer";
             this.infocontainer.ShadowDecoration.Parent = this.infocontainer;
             this.infocontainer.Size = new System.Drawing.Size(187, 104);
@@ -412,7 +412,7 @@ namespace MCClientManager
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.ClientSize = new System.Drawing.Size(650, 500);
-            this.Controls.Add(this.skidclientpage);
+            this.Controls.Add(this.skidpage);
             this.Controls.Add(this.fluxpage);
             this.Controls.Add(this.wurstpage);
             this.Controls.Add(this.wolframpage);
@@ -423,8 +423,8 @@ namespace MCClientManager
             this.Controls.Add(this.versionspathlabel);
             this.Controls.Add(this.titlebar);
             this.Controls.Add(this.versionsfolder);
-            this.Controls.Add(this.gamesensedownloader);
-            this.Controls.Add(this.jigsawdownloader);
+            this.Controls.Add(this.gamesensepage);
+            this.Controls.Add(this.jigsawpage);
             this.Controls.Add(this.infocontainer);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "MainForm";
@@ -446,8 +446,8 @@ namespace MCClientManager
 
         #endregion
 
-        private System.Windows.Forms.Button jigsawdownloader;
-        private System.Windows.Forms.Button gamesensedownloader;
+        private System.Windows.Forms.Button jigsawpage;
+        private System.Windows.Forms.Button gamesensepage;
         private System.Windows.Forms.TextBox versionsfolder;
         private System.Windows.Forms.Panel titlebar;
         private System.Windows.Forms.Label versionspathlabel;
@@ -470,7 +470,7 @@ namespace MCClientManager
         private System.Windows.Forms.Button wolframpage;
         private System.Windows.Forms.Button wurstpage;
         private System.Windows.Forms.Button fluxpage;
-        private System.Windows.Forms.Button skidclientpage;
+        private System.Windows.Forms.Button skidpage;
         private Guna.UI2.WinForms.Guna2ProgressBar downloadbar;
         private Guna.UI2.WinForms.Guna2GroupBox infocontainer;
     }
