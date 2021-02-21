@@ -95,8 +95,8 @@ namespace MCClientManager
         }
 
         #endregion
-        private Guna.UI2.WinForms.Guna2Button downloadskid18;
         private System.Windows.Forms.RichTextBox description;
         private System.Windows.Forms.Button skidclientpage;
+        internal Guna.UI2.WinForms.Guna2Button downloadskid18;
     }
 }

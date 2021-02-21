@@ -26,9 +26,18 @@ namespace MCClientManager
 
         const double MB = 1_048_576D;
         string versionspath = Environment.GetFolderPath(Environment.SpecialFolder.UserProfile) + "\\AppData\\Roaming\\.minecraft\\versions";
-        string jigsawurl = "https://github.com/iQuickGaming/MCClientManager/raw/master/Jigsaw.zip";
+        string jigsaw18url = "https://github.com/iQuickGaming/MCClientManager/raw/master/Jigsaw.zip";
+        string jigsaw110url = "";
         string gamesenseurl = "https://github.com/iQuickGaming/MCClientManager/raw/master/Exhibition%20%5Biquickgaming.weebly.com%5D.zip";
-        WebClient downloader = new WebClient();
+        string aristois1165url = "https://github.com/iQuickGaming/MCClientManager/raw/master/1.16.5-Aristois.zip";
+        string fluxurl = "https://github.com/iQuickGaming/MCClientManager/raw/master/Flux%20b12%201.8x.zip";
+        string sigmaurl = "https://github.com/iQuickGaming/MCClientManager/raw/master/Sigma%201.8x.zip";
+        string skidurl = "https://github.com/iQuickGaming/MCClientManager/raw/master/Skid%201.8x.zip";
+        string skillclienturl = "https://github.com/iQuickGaming/MCClientManager/raw/master/SkillClient%201.8x.zip";
+        string wolfram18url = "https://github.com/iQuickGaming/MCClientManager/raw/master/Wolfram%20MC%201.8.zip";
+        string wolfram112url = "https://github.com/iQuickGaming/MCClientManager/raw/master/Wolfram%20MC%201.12.zip";
+        string wursturl = "";
+        public WebClient downloader = new WebClient();
         int c = 1;
         bool wait = false;
         long ticks;
@@ -48,9 +57,14 @@ namespace MCClientManager
         public MainForm()
         {
             InitializeComponent();
-             gamesensepageselector.Parent = skillclientpageselector.Parent = skidpageselector.Parent = wolframpageselector.Parent = wurstpageselector.Parent = sigmapageselector.Parent = aristoispageselector.Parent = jigsawpageselector.Parent =  fluxpageselector.Parent = credits.Parent = this;
-             skillclientpageselector.Location = wolframpageselector.Location = wurstpageselector.Location = skidpageselector.Location = gamesensepageselector.Location = fluxpageselector.Location = aristoispageselector.Location = sigmapageselector.Location = jigsawpageselector.Location = credits.Location = new Point(350, 30);
+            gamesensepageselector.Parent = skillclientpageselector.Parent = skidpageselector.Parent = wolframpageselector.Parent = wurstpageselector.Parent = sigmapageselector.Parent = aristoispageselector.Parent = jigsawpageselector.Parent =  fluxpageselector.Parent = credits.Parent = this;
+            skillclientpageselector.Location = wolframpageselector.Location = wurstpageselector.Location = skidpageselector.Location = gamesensepageselector.Location = fluxpageselector.Location = aristoispageselector.Location = sigmapageselector.Location = jigsawpageselector.Location = credits.Location = new Point(350, 30);
             versionsfolder.Text = versionspath;
+            aristoispageselector.downloadaristois1165.Click += aristois1165download;
+            jigsawpageselector.downloadjigsaw18.Click += jigsaw18download;
+            gamesensepageselector.downloadgamesense.Click += gamesensedownload;
+            fluxpageselector.downloadflux18.Click += fluxdownload;
+            sigmapageselector.downloadsigma18.Click += sigmadownload;
             aristoispage.MouseEnter += aristoispage_MouseEnter;
             aristoispage.MouseLeave += aristoispage_MouseLeave;
             fluxpage.MouseEnter += fluxpage_MouseEnter;
@@ -100,6 +114,9 @@ namespace MCClientManager
             {
                 if (e.Error != null)
                     MessageBox.Show("Error");
+
+                label1.Text = "0.00 MB/s";
+
                 switch (e.UserState)
                 {
                     case 0:
@@ -137,6 +154,60 @@ namespace MCClientManager
                             catch { }
                         }
                         break;
+
+                    case 2:
+                        try
+                        {
+                            ZipFile.ExtractToDirectory(versionspath + "\\Aristois1165.zip", versionspath);
+                            File.Delete(versionspath + "\\Aristois1165.zip");
+                        }
+                        catch (IOException)
+                        {
+                            try
+                            {
+                                Directory.Delete(versionspath + "\\Aristois1165.zip", true);
+                                ZipFile.ExtractToDirectory(versionspath + "\\Aristois1165.zip", versionspath);
+                                File.Delete(versionspath + "\\Aristois1165.zip");
+                            }
+                            catch { }
+                        }
+                        break;
+
+                    case 3:
+                        try
+                        {
+                            ZipFile.ExtractToDirectory(versionspath + "\\Flux.zip", versionspath);
+                            File.Delete(versionspath + "\\Flux.zip");
+                        }
+                        catch (IOException)
+                        {
+                            try
+                            {
+                                Directory.Delete(versionspath + "\\Flux.zip", true);
+                                ZipFile.ExtractToDirectory(versionspath + "\\Flux.zip", versionspath);
+                                File.Delete(versionspath + "\\Flux.zip");
+                            }
+                            catch { }
+                        }
+                        break;
+
+                    case 4:
+                        try
+                        {
+                            ZipFile.ExtractToDirectory(versionspath + "\\Sigma.zip", versionspath);
+                            File.Delete(versionspath + "\\Sigma.zip");
+                        }
+                        catch (IOException)
+                        {
+                            try
+                            {
+                                Directory.Delete(versionspath + "\\Sigma.zip", true);
+                                ZipFile.ExtractToDirectory(versionspath + "\\Sigma.zip", versionspath);
+                                File.Delete(versionspath + "\\Sigma.zip");
+                            }
+                            catch { }
+                        }
+                        break;
                 }
                 new Thread(() =>
                 {
@@ -145,6 +216,16 @@ namespace MCClientManager
                 }).Start();
             };
         }
+
+        #region misc
+
+        private void foldericon_Click(object sender, EventArgs e)
+        {
+            versionspathdialog.ShowDialog();
+            versionsfolder.Text = versionspathdialog.SelectedPath.ToString();
+            versionspath = versionspathdialog.SelectedPath.ToString();
+        }
+
         internal void close_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -166,18 +247,40 @@ namespace MCClientManager
         {
             WindowState = FormWindowState.Minimized;
         }
+        #endregion misc
 
-        internal void jigsawdownloader_Click(object sender, EventArgs e)
+        #region downloaders
+        internal void sigmadownload(object sender, EventArgs e)
         {
             if (!wait)
             {
                 ticks = DateTime.Now.Ticks;
                 wait = true;
-                downloader.DownloadFileAsync(new Uri(jigsawurl), versionspath + "\\Jigsaw.zip", 0);
+                downloader.DownloadFileAsync(new Uri(sigmaurl), versionspath + "\\Sigma.zip", 4);
             }
         }
 
-        internal void gamesensedownloader_Click(object sender, EventArgs e)
+        internal void fluxdownload(object sender, EventArgs e)
+        {
+            if (!wait)
+            {
+                ticks = DateTime.Now.Ticks;
+                wait = true;
+                downloader.DownloadFileAsync(new Uri(fluxurl), versionspath + "\\Flux.zip", 3);
+            }
+        }
+
+        internal void aristois1165download(object sender, EventArgs e)
+        {
+            if (!wait)
+            {
+                ticks = DateTime.Now.Ticks;
+                wait = true;
+                downloader.DownloadFileAsync(new Uri(aristois1165url), versionspath + "\\Aristois1165.zip", 2);
+            }
+        }
+
+        internal void gamesensedownload(object sender, EventArgs e)
         {
             if (!wait)
             {
@@ -187,12 +290,17 @@ namespace MCClientManager
             }
         }
 
-        private void foldericon_Click(object sender, EventArgs e)
+        internal void jigsaw18download(object sender, EventArgs e)
         {
-            versionspathdialog.ShowDialog();
-            versionsfolder.Text = versionspathdialog.SelectedPath.ToString();
-            versionspath = versionspathdialog.SelectedPath.ToString();
+            if (!wait)
+            {
+                ticks = DateTime.Now.Ticks;
+                wait = true;
+                downloader.DownloadFileAsync(new Uri(jigsaw18url), versionspath + "\\Jigsaw.zip", 0);
+            }
         }
+
+        #endregion
 
         #region draggable panel
 
@@ -221,12 +329,13 @@ namespace MCClientManager
 
         #endregion
 
-        private void jigsawdownloader_Click_1(object sender, EventArgs e)
+        #region clientinfo
+        internal void jigsawdownloader_Click(object sender, EventArgs e)
         {
             jigsawpageselector.BringToFront();
         }
 
-        private void gamesensedownloader_Click_1(object sender, EventArgs e)
+        private void gamesensedownloader_Click(object sender, EventArgs e)
         {
             gamesensepageselector.BringToFront();
         }
@@ -265,8 +374,10 @@ namespace MCClientManager
         {
             aristoispageselector.BringToFront();
         }
+        #endregion
 
-        // Animation
+        #region animation 
+
         Point oldpos = new Point(0, 0);
         Size oldsize = new Size(0, 0);
         Point posdecrement = new Point(-2, -2);
@@ -380,5 +491,7 @@ namespace MCClientManager
             wurstpage.Location = oldpos;
             wurstpage.Size = oldsize;
         }
+
+        #endregion
     }
 }

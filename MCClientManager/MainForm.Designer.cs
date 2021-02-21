@@ -82,7 +82,6 @@ namespace MCClientManager
             this.jigsawpage.Size = new System.Drawing.Size(100, 25);
             this.jigsawpage.TabIndex = 0;
             this.jigsawpage.UseVisualStyleBackColor = false;
-            this.jigsawpage.Click += new System.EventHandler(this.jigsawdownloader_Click_1);
             // 
             // gamesensepage
             // 
@@ -97,7 +96,6 @@ namespace MCClientManager
             this.gamesensepage.Size = new System.Drawing.Size(100, 25);
             this.gamesensepage.TabIndex = 1;
             this.gamesensepage.UseVisualStyleBackColor = true;
-            this.gamesensepage.Click += new System.EventHandler(this.gamesensedownloader_Click_1);
             // 
             // versionsfolder
             // 

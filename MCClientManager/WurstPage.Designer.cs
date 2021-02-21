@@ -109,9 +109,9 @@ namespace MCClientManager
         }
 
         #endregion
-        private Guna.UI2.WinForms.Guna2Button downloadwurst1165;
         private System.Windows.Forms.RichTextBox description;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.PictureBox pictureBox1;
+        internal Guna.UI2.WinForms.Guna2Button downloadwurst1165;
     }
 }

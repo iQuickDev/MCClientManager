@@ -97,7 +97,7 @@ namespace MCClientManager
 
         #endregion
         private System.Windows.Forms.RichTextBox description;
-        private Guna.UI2.WinForms.Guna2Button downloadjigsaw18;
         private System.Windows.Forms.Button jigsawdownloader;
+        internal Guna.UI2.WinForms.Guna2Button downloadjigsaw18;
     }
 }

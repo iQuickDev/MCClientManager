@@ -95,8 +95,8 @@ namespace MCClientManager
         }
 
         #endregion
-        private Guna.UI2.WinForms.Guna2Button downloadgamesense;
         private System.Windows.Forms.RichTextBox description;
         private System.Windows.Forms.Button gamesensedownloader;
+        internal Guna.UI2.WinForms.Guna2Button downloadgamesense;
     }
 }
