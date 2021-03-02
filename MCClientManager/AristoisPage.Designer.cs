@@ -59,12 +59,14 @@ namespace MCClientManager
             // 
             this.description.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
             this.description.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.description.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.description.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.description.ForeColor = System.Drawing.Color.White;
             this.description.Location = new System.Drawing.Point(35, 106);
             this.description.Name = "description";
+            this.description.ReadOnly = true;
             this.description.Size = new System.Drawing.Size(230, 197);
             this.description.TabIndex = 5;
-            this.description.Text = "";
+            this.description.Text = resources.GetString("description.Text");
             // 
             // button1
             // 

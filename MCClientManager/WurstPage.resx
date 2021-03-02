@@ -117,6 +117,256 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="description.Text" xml:space="preserve">
+    <value>Website: https://wurstclient.net
+
+Cheats (148)
+/home
+AntiAFK
+AntiBlind
+AntiCactus
+AntiFire
+AntiKnockback
+AntiPotion
+AntiSpam
+AntiWaterPush
+AntiWobble
+AutoArmor
+AutoBuild
+AutoDrop
+AutoEat
+AutoFarm
+AutoFish
+AutoLeave
+AutoMine
+AutoPotion
+AutoReconnect
+AutoRespawn
+AutoSign
+AutoSoup
+AutoSprint
+AutoSteal
+AutoSwim
+AutoSwitch
+AutoSword
+AutoTool
+AutoTotem
+AutoWalk
+BaseFinder
+Blink
+BlockHit
+BoatFly
+BonemealAura
+BowAimbot
+BuildRandom
+BunnyHop
+CameraNoClip
+CaveFinder
+ChatTranslator
+ChestESP
+ClickAura
+ClickGUI
+CMD-Block
+CrashChest
+CrashTag
+Criticals
+Derp
+Dolphin
+Excavator
+ExtraElytra
+FancyChat
+FastBow
+FastBreak
+FastEat
+FastLadder
+FastPlace
+FeedAura
+FightBot
+Flight
+Follow
+ForceOP
+ForcePush
+Freecam
+Fullbright
+Glide
+HandNoClip
+Headless
+HeadRoll
+HealthTags
+HighJump
+InfiniChat
+InstantBunker
+InvWalk
+ItemESP
+ItemGenerator
+Jesus
+Jetpack
+Kaboom
+Killaura
+KillauraLegit
+KillPotion
+Liquids
+LogSpammer
+LSD
+MassTPA
+MileyCyrus
+MobESP
+MobSpawnESP
+MountBypass
+MultiAura
+NameProtect
+NameTags
+Navigator
+NoClip
+NoFall
+NoFireOverlay
+NoHurtcam
+NoOverlay
+NoPumpkin
+NoSlowdown
+NoWeather
+NoWeb
+Nuker
+NukerLegit
+OpenWaterESP
+OP-Sign
+Overlay
+Panic
+Parkour
+Phase
+PlayerESP
+PlayerFinder
+PotionSaver
+ProphuntESP
+Protect
+Radar
+RainbowUI
+Reach
+Regen
+RemoteView
+SafeWalk
+ScaffoldWalk
+Search
+ServerCrasher
+SkinDerp
+Sneak
+SnowShoe
+Spammer
+SpeedHack
+SpeedNuker
+Spider
+Step
+TemplateTool
+Throw
+Tillaura
+Timer
+Tired
+TooManyHax
+TP-Aura
+Trajectories
+TriggerBot
+TrollPotion
+TrueSight
+Tunneller
+X-Ray
+
+Commands (54)
+.addalt
+.annoy
+.author
+.bind
+.binds
+.blink
+.clear
+.copyitem
+.damage
+.dig
+.drop
+.enabledhax
+.enchant
+.excavate
+.features
+.follow
+.friends
+.getpos
+.ghosthand
+.give
+.gm
+.goto
+.help
+.invsee
+.ip
+.jump
+.leave
+.modify
+.nothing
+.nuker
+.path
+.potion
+.protect
+.rename
+.repair
+.rv
+.say
+.search
+.setcheckbox
+.setmode
+.setslider
+.settings
+.spammer
+.sv
+.t
+.taco
+.throw
+.toomanyhax
+.tp
+.unbind
+.vclip
+.viewnbt
+.wms
+.xray
+
+Other Features (20)
+AltManager
+BookHack
+Changelog
+Disable Wurst
+HackList
+Keybind Manager
+Last Server
+Middle Click Friends
+Reconnect
+Sentry
+ServerFinder
+Server CleanUp
+TabGui
+Target
+VanillaSpoof
+Wurst-Bot
+Wurst Capes
+Wurst Logo (can be disabled)
+YesCheat+
+Zoom
+
+Default Keybinds (15)
+Note: Keybinds are slightly different depending on your Minecraft version. Check the Wurst Wiki for details.
+
+B -&gt; FastPlace;FastBreak
+C -&gt; Fullbright
+G -&gt; Flight
+GRAVE -&gt; SpeedNuker
+H -&gt; /home
+J -&gt; Jesus
+K -&gt; MultiAura
+LCONTROL -&gt; Navigator
+N -&gt; Nuker
+R -&gt; Killaura
+RCONTROL -&gt; ClickGUI
+RSHIFT -&gt; Navigator
+U -&gt; Freecam
+X -&gt; X-Ray
+Z -&gt; Sneak</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="button1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

@@ -117,6 +117,148 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="description.Text" xml:space="preserve">
+    <value>Website: https://www.wolframclient.net
+
+About Wolfram
+Wolfram is a hacked client for Minecraft that allows you to do all kinds of cheats and hacks that the game normally wouldn't allow, such as flying in Survival Mode, finding ores with X-Ray vision and automatically attacking enemies.
+
+The Wolfram Client is mostly known for its large collection of hacks, its high-quality NoCheat+ bypasses, a beautiful user interface and its built-in OptiFine integration.
+
+Wolfram was originally created by ShadowSpl0it, who later donated the project to WiZARDHAX.com, and is now maintained by the Wurst-Imperium. We have updated the client to Minecraft 1.9.4, 1.10.x, 1.11.x and 1.12.x.
+
+Cheats (102)
+AimAssist
+Aimbot
+AirMove
+AirWalk
+ArrowTrajectories
+AntiAFK
+AntiHurtcam
+AntiSpam
+ArmorESP
+AutoArmor
+AutoAttack
+AutoSteal
+AutoEat
+AutoFish
+AutoMine
+AutoShoot
+AutoRespawn
+AutoSoup
+AutoSwim
+AutoSword
+AutoTool
+AutoWalk
+Blink
+Breadcrumbs
+BunnyHop
+BowAimbot
+CaveFinder
+CameraNoClip
+ChestESP
+ClickAimbot
+ClickAura
+ClickNuker
+CompassTracer
+CreativeFly
+Criticals
+Derp
+Dolphin
+Enhance
+FarmhuntESP
+FakeHackers
+FastBow
+FastBreak
+FastFall
+FastLadder
+FastPlace
+Fightbot
+Flight
+Flip
+FlyNCP
+FlyVanilla
+ForceField
+Freecam
+Fullbright
+Ghost
+Glide
+GlideFly
+Headles
+HighJump
+InvWalk
+ItemESP
+ItemLabels
+Jesus
+KillAura
+MiddleClickFriends
+MobESP
+MobSpawnESP
+MoreInventory
+Nametags
+NoBlind
+NoBreakDelay
+NoFall
+NoFireworks
+NoOverlay
+NoSlowdown
+Nuker
+Panic
+ParkourJump
+Pathfinder
+Phase
+PlayerESP
+PotionEffects
+Projectiles
+ProphuntESP
+Reach
+Regen
+SafeWalk
+SilentSneak
+Sneak
+Spider
+Speed
+Sprint
+SprintLegit
+Step
+StepLegit
+Timer
+Tracers
+Twerk
+TrueSight
+Velocity
+Wallhack
+Xray
+Zoot
+
+Commands (15)
+.bind
+.clear
+.cs
+.damage
+.friends
+.enemies
+.hclip
+.help
+.mm
+.nameprotect
+.panic
+.path
+.say
+.scrape
+.vclip 
+
+Other Features (9)
+Alt Manager
+Array List
+GUI Editor
+GUI Presets
+Info Box
+Radar
+Rainbow Mode
+Tab GUI
+Text Radar</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="button1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

@@ -32,6 +32,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>ICON.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="FastColoredTextBox">
       <HintPath>..\..\QuickSploit\QuickSploit\bin\Debug\FastColoredTextBox.dll</HintPath>
@@ -83,17 +86,17 @@
     <Compile Include="gamesensePage.Designer.cs">
       <DependentUpon>gamesensePage.cs</DependentUpon>
     </Compile>
+    <Compile Include="ImpactPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ImpactPage.Designer.cs">
+      <DependentUpon>ImpactPage.cs</DependentUpon>
+    </Compile>
     <Compile Include="JigSawPage.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="JigSawPage.Designer.cs">
       <DependentUpon>JigSawPage.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FolderDialog.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FolderDialog.Designer.cs">
-      <DependentUpon>FolderDialog.cs</DependentUpon>
     </Compile>
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
@@ -121,6 +124,12 @@
     <Compile Include="SkillClientPage.Designer.cs">
       <DependentUpon>SkillClientPage.cs</DependentUpon>
     </Compile>
+    <Compile Include="Updater.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Updater.Designer.cs">
+      <DependentUpon>Updater.cs</DependentUpon>
+    </Compile>
     <Compile Include="WolfRamPage.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -145,11 +154,11 @@
     <EmbeddedResource Include="gamesensePage.resx">
       <DependentUpon>gamesensePage.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ImpactPage.resx">
+      <DependentUpon>ImpactPage.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="JigSawPage.resx">
       <DependentUpon>JigSawPage.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FolderDialog.resx">
-      <DependentUpon>FolderDialog.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
@@ -162,6 +171,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="SigmaPage.resx">
       <DependentUpon>SigmaPage.cs</DependentUpon>
@@ -171,6 +181,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="SkillClientPage.resx">
       <DependentUpon>SkillClientPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Updater.resx">
+      <DependentUpon>Updater.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="WolfRamPage.resx">
       <DependentUpon>WolfRamPage.cs</DependentUpon>
@@ -191,6 +204,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Guna.UI2.dll" />
+    <Content Include="ICON.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

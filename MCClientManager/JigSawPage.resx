@@ -117,6 +117,14 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="description.Text" xml:space="preserve">
+    <value>Website: https://www.jigsawclient.net
+
+What is Jigsaw?
+Jigsaw is a Minecraft hacked client that can switch between being a ghost client and a normal client. It has the most stable infinite reach of all. Currently, Jigsaw is under development but you can still download it. Jigsaw is being developed by me, a 16 year old boy from Sweden. I love coding and this is my biggest project to date. The client is a bit messy and complex at the moment, so it may be hard to start using it. I am working on making it more user-friendly by adding more commands and better tooltips. I may also do tutorials.
+
+- I try to make Jigsaw unique, and I want to add a lot more features so stay tuned for updates! -</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="jigsawdownloader.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

@@ -117,6 +117,16 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="description.Text" xml:space="preserve">
+    <value>Website: https://aristois.net/download
+
+Our History
+Starting out originally as a small project in mid 2016, Aristois has since attracted hundreds of thousands of users, gaining over a million downloads. Since early 2019, Aristois has been incorporated, headquartered in northern Sweden.
+
+Our mission is to provide people with the best, and most up-to-date, extensions and mods for games such as Minecraft. We strive to ensure that our users get the smoothest performance, quickest assistance, and most enjoyable gameplay. Aristois is currently one of the largest, and only, mods that provide up-to-date tools for the newest releases of Minecraft.
+
+Additionally, we have partnered with numerous companies, such as Hicoria, to bring projects such as MC-oAuth to life. Several of our projects are open-source and hosted on GitLab. We are a small company that is working hard to bring the absolute best of modding to the table.</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="button1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

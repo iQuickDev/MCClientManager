@@ -21,8 +21,7 @@ namespace MCClientManager
         public WolfRamPage wolframpageselector = new WolfRamPage();
         public WurstPage wurstpageselector = new WurstPage();
         public Credits credits = new Credits();
-
-
+        public Updater updater = new Updater();
 
         const double MB = 1_048_576D;
         string versionspath = Environment.GetFolderPath(Environment.SpecialFolder.UserProfile) + "\\AppData\\Roaming\\.minecraft\\versions";
@@ -36,6 +35,7 @@ namespace MCClientManager
         string skillclienturl = "https://github.com/iQuickGaming/MCClientManager/raw/master/SkillClient%201.8x.zip";
         string wolfram18url = "https://github.com/iQuickGaming/MCClientManager/raw/master/Wolfram%20MC%201.8.zip";
         string wolfram112url = "https://github.com/iQuickGaming/MCClientManager/raw/master/Wolfram%20MC%201.12.zip";
+        string impact18url = "";
         string wursturl = "";
         public WebClient downloader = new WebClient();
         int c = 1;
@@ -59,12 +59,29 @@ namespace MCClientManager
             InitializeComponent();
             gamesensepageselector.Parent = skillclientpageselector.Parent = skidpageselector.Parent = wolframpageselector.Parent = wurstpageselector.Parent = sigmapageselector.Parent = aristoispageselector.Parent = jigsawpageselector.Parent =  fluxpageselector.Parent = credits.Parent = this;
             skillclientpageselector.Location = wolframpageselector.Location = wurstpageselector.Location = skidpageselector.Location = gamesensepageselector.Location = fluxpageselector.Location = aristoispageselector.Location = sigmapageselector.Location = jigsawpageselector.Location = credits.Location = new Point(350, 30);
+            updater.Location = new Point(0, 30);
+            if (updater.UpdateChecker())
+            {
+                updater.Parent = this;
+                updater.BringToFront();
+            }
             versionsfolder.Text = versionspath;
+
+            // Handlers for downloads
+
             aristoispageselector.downloadaristois1165.Click += aristois1165download;
             jigsawpageselector.downloadjigsaw18.Click += jigsaw18download;
             gamesensepageselector.downloadgamesense.Click += gamesensedownload;
             fluxpageselector.downloadflux18.Click += fluxdownload;
             sigmapageselector.downloadsigma18.Click += sigmadownload;
+            skidpageselector.downloadskid18.Click += skiddownload;
+            skillclientpageselector.downloadskillclient18.Click += skillclientdownload;
+            wolframpageselector.downloadwolfram18.Click += wolfram18download;
+            wolframpageselector.downloadwolfram112.Click += wolfram112download;
+
+
+            // Handlers for animation
+
             aristoispage.MouseEnter += aristoispage_MouseEnter;
             aristoispage.MouseLeave += aristoispage_MouseLeave;
             fluxpage.MouseEnter += fluxpage_MouseEnter;
@@ -84,11 +101,11 @@ namespace MCClientManager
             wurstpage.MouseEnter += wurstpage_MouseEnter;
             wurstpage.MouseLeave += wurstpage_MouseLeave;
 
+            // Handlers for misc
+
             titlebar.MouseDown += titlebar_MouseDown;
             titlebar.MouseUp += titlebar_MouseUp;
             titlebar.MouseMove += titlebar_MouseMove;
-            jigsawpage.Click += jigsawdownloader_Click;
-            gamesensepage.Click += gamesensedownloader_Click;
             close.Click += close_Click;
             minimize.Click += minimize_Click;
             pin.Click += pin_Click;
@@ -110,6 +127,7 @@ namespace MCClientManager
                 else
                     c++;
             };
+
             downloader.DownloadFileCompleted += (_, e) =>
             {
                 if (e.Error != null)
@@ -208,6 +226,96 @@ namespace MCClientManager
                             catch { }
                         }
                         break;
+
+                    case 5:
+                        try
+                        {
+                            ZipFile.ExtractToDirectory(versionspath + "\\Skid.zip", versionspath);
+                            File.Delete(versionspath + "\\Skid.zip");
+                        }
+                        catch (IOException)
+                        {
+                            try
+                            {
+                                Directory.Delete(versionspath + "\\Skid.zip", true);
+                                ZipFile.ExtractToDirectory(versionspath + "\\Skid.zip", versionspath);
+                                File.Delete(versionspath + "\\Skid.zip");
+                            }
+                            catch { }
+                        }
+                        break;
+
+                    case 6:
+                        try
+                        {
+                            ZipFile.ExtractToDirectory(versionspath + "\\SkillClient.zip", versionspath);
+                            File.Delete(versionspath + "\\SkillClient.zip");
+                        }
+                        catch (IOException)
+                        {
+                            try
+                            {
+                                Directory.Delete(versionspath + "\\SkillClient.zip", true);
+                                ZipFile.ExtractToDirectory(versionspath + "\\SkillClient.zip", versionspath);
+                                File.Delete(versionspath + "\\SkillClient.zip");
+                            }
+                            catch { }
+                        }
+                        break;
+
+                    case 7:
+                        try
+                        {
+                            ZipFile.ExtractToDirectory(versionspath + "\\WolfRam18.zip", versionspath);
+                            File.Delete(versionspath + "\\WolfRam18.zip");
+                        }
+                        catch (IOException)
+                        {
+                            try
+                            {
+                                Directory.Delete(versionspath + "\\WolfRam18.zip", true);
+                                ZipFile.ExtractToDirectory(versionspath + "\\WolfRam18.zip", versionspath);
+                                File.Delete(versionspath + "\\WolfRam18.zip");
+                            }
+                            catch { }
+                        }
+                        break;
+
+                    case 8:
+                        try
+                        {
+                            ZipFile.ExtractToDirectory(versionspath + "\\WolfRam112.zip", versionspath);
+                            File.Delete(versionspath + "\\WolfRam112.zip");
+                        }
+                        catch (IOException)
+                        {
+                            try
+                            {
+                                Directory.Delete(versionspath + "\\WolfRam112.zip", true);
+                                ZipFile.ExtractToDirectory(versionspath + "\\WolfRam112.zip", versionspath);
+                                File.Delete(versionspath + "\\WolfRam112.zip");
+                            }
+                            catch { }
+                        }
+                        break;
+
+                    case 9:
+                        try
+                        {
+                            ZipFile.ExtractToDirectory(versionspath + "\\Impact.zip", versionspath);
+                            File.Delete(versionspath + "\\Impact.zip");
+                        }
+                        catch (IOException)
+                        {
+                            try
+                            {
+                                Directory.Delete(versionspath + "\\Impact18.zip", true);
+                                ZipFile.ExtractToDirectory(versionspath + "\\Impact18.zip", versionspath);
+                                File.Delete(versionspath + "\\Impact18.zip");
+                            }
+                            catch { }
+                        }
+                        break;
                 }
                 new Thread(() =>
                 {
@@ -250,6 +358,57 @@ namespace MCClientManager
         #endregion misc
 
         #region downloaders
+
+        internal void impact18download(object sender, EventArgs e)
+        {
+            if (!wait)
+            {
+                ticks = DateTime.Now.Ticks;
+                wait = true;
+                downloader.DownloadFileAsync(new Uri(impact18url), versionspath + "\\Impact18", 8);
+            }
+        }
+
+        internal void wolfram112download(object sender, EventArgs e)
+        {
+            if (!wait)
+            {
+                ticks = DateTime.Now.Ticks;
+                wait = true;
+                downloader.DownloadFileAsync(new Uri(wolfram112url), versionspath + "\\WolfRam112", 8);
+            }
+        }
+
+        internal void wolfram18download(object sender, EventArgs e)
+        {
+            if (!wait)
+            {
+                ticks = DateTime.Now.Ticks;
+                wait = true;
+                downloader.DownloadFileAsync(new Uri(wolfram18url), versionspath + "\\WolfRam18", 7);
+            }
+        }
+
+        internal void skillclientdownload(object sender, EventArgs e)
+        {
+            if (!wait)
+            {
+                ticks = DateTime.Now.Ticks;
+                wait = true;
+                downloader.DownloadFileAsync(new Uri(skillclienturl), versionspath + "\\SkillClient.zip", 6);
+            }
+        }
+
+        internal void skiddownload(object sender, EventArgs e)
+        {
+            if (!wait)
+            {
+                ticks = DateTime.Now.Ticks;
+                wait = true;
+                downloader.DownloadFileAsync(new Uri(skidurl), versionspath + "\\Skid.zip", 5);
+            }
+        }
+
         internal void sigmadownload(object sender, EventArgs e)
         {
             if (!wait)
@@ -302,7 +461,7 @@ namespace MCClientManager
 
         #endregion
 
-        #region draggable panel
+        #region draggable titlebar
 
         bool drag = false;
         Point start_point = new Point(0, 0);
@@ -330,6 +489,17 @@ namespace MCClientManager
         #endregion
 
         #region clientinfo
+
+        private void jigsawpage_Click(object sender, EventArgs e)
+        {
+            jigsawpageselector.BringToFront();
+        }
+
+        private void gamesensepage_Click(object sender, EventArgs e)
+        {
+            gamesensepageselector.BringToFront();
+        }
+
         internal void jigsawdownloader_Click(object sender, EventArgs e)
         {
             jigsawpageselector.BringToFront();

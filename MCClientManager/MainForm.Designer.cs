@@ -82,6 +82,7 @@ namespace MCClientManager
             this.jigsawpage.Size = new System.Drawing.Size(100, 25);
             this.jigsawpage.TabIndex = 0;
             this.jigsawpage.UseVisualStyleBackColor = false;
+            this.jigsawpage.Click += new System.EventHandler(this.jigsawpage_Click);
             // 
             // gamesensepage
             // 
@@ -93,9 +94,10 @@ namespace MCClientManager
             this.gamesensepage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.gamesensepage.Location = new System.Drawing.Point(20, 96);
             this.gamesensepage.Name = "gamesensepage";
-            this.gamesensepage.Size = new System.Drawing.Size(100, 25);
+            this.gamesensepage.Size = new System.Drawing.Size(110, 25);
             this.gamesensepage.TabIndex = 1;
             this.gamesensepage.UseVisualStyleBackColor = true;
+            this.gamesensepage.Click += new System.EventHandler(this.gamesensepage_Click);
             // 
             // versionsfolder
             // 
@@ -424,7 +426,9 @@ namespace MCClientManager
             this.Controls.Add(this.gamesensepage);
             this.Controls.Add(this.jigsawpage);
             this.Controls.Add(this.infocontainer);
+            this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MainForm";
             this.Text = "MCClientManager";
             this.titlebar.ResumeLayout(false);

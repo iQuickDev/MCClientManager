@@ -45,6 +45,7 @@ namespace MCClientManager
             this.downloadwurst1165.BorderRadius = 24;
             this.downloadwurst1165.CheckedState.Parent = this.downloadwurst1165;
             this.downloadwurst1165.CustomImages.Parent = this.downloadwurst1165;
+            this.downloadwurst1165.Enabled = false;
             this.downloadwurst1165.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(95)))), ((int)(((byte)(0)))));
             this.downloadwurst1165.Font = new System.Drawing.Font("Segoe UI", 15F);
             this.downloadwurst1165.ForeColor = System.Drawing.Color.Black;
@@ -61,12 +62,14 @@ namespace MCClientManager
             // 
             this.description.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
             this.description.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.description.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.description.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.description.ForeColor = System.Drawing.Color.White;
             this.description.Location = new System.Drawing.Point(35, 106);
             this.description.Name = "description";
+            this.description.ReadOnly = true;
             this.description.Size = new System.Drawing.Size(230, 197);
             this.description.TabIndex = 5;
-            this.description.Text = "";
+            this.description.Text = resources.GetString("description.Text");
             // 
             // button1
             // 

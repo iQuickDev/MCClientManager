@@ -39,12 +39,14 @@ namespace MCClientManager
             // 
             this.description.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
             this.description.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.description.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.description.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.description.ForeColor = System.Drawing.Color.White;
             this.description.Location = new System.Drawing.Point(35, 96);
             this.description.Name = "description";
+            this.description.ReadOnly = true;
             this.description.Size = new System.Drawing.Size(230, 197);
             this.description.TabIndex = 1;
-            this.description.Text = "";
+            this.description.Text = resources.GetString("description.Text");
             // 
             // downloadjigsaw18
             // 
@@ -89,6 +91,7 @@ namespace MCClientManager
             this.Controls.Add(this.jigsawdownloader);
             this.Controls.Add(this.downloadjigsaw18);
             this.Controls.Add(this.description);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
             this.Name = "JigSawPage";
             this.Size = new System.Drawing.Size(300, 480);
             this.ResumeLayout(false);

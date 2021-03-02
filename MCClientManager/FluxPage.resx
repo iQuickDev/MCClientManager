@@ -117,6 +117,67 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="description.Text" xml:space="preserve">
+    <value>Website: https://mc-flux.com
+
+Undetectable
+Undetected on the most famous anti-cheat plugins, including Watchdog, NoCheatPlus, GWEN and more.
+
+Ask us for current bypass status
+
+Customizable
+Flux comes easily customizable with many settings easily changed from through the click GUI itself.
+
+Easy to Use
+Flux comes easy to use with its Presets which automatically configures your game if on a famous server.
+
+
+Built-in Alt Generator
+Flux supports Alt Generators (MCLeaks, FastAlts). You no longer need to repeat copy-and-paste many times!
+
+Optifine Included
+Flux includes Optifine. You can highly customize the video settings.
+
+Autobuy
+Easily purchase the client without having to wait for a whitelist or an admin to give you perms to download the update.
+
+75+ HQ Hacks
+A lot of Hacks!
+
+Kill Aura
+Anti Bots
+Anti Knockback
+Anti Fire/Potion
+Auto Armor
+Auto Potion
+Auto Soup
+Regen
+Auto Clicker
+Aim Assist
+Fast Eat
+Inventory Cleaner
+NameProtect
+Velocity
+Stressor
+Middle Click Friend
+Speed
+Long Jump
+Anti Void
+Air Jump
+Inventory Move
+No Slowdown
+Jesus
+Strafe
+Step
+Sprint
+Sneak
+No Fall
+Blink
+Anti Prick
+Break Aura
+Scaffold
+and many more...!</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="button1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
